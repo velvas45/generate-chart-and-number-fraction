@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generate Chart</title>
+    <style>
+      html {
+        margin-top: 75px;
+      }
+      .form-flex {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+      .chart-wrapper {
+        width: 80%;
+        min-height: 100px;
+        padding: 1rem 0;
+        margin: 0 auto;
+        border-radius: 10px;
+        /* background-color: #e3e3e3; */
+      }
+      .chart-items {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 15px;
+      }
+
+      .chart-item {
+        width: 80px;
+        color: #000;
+        text-align: center;
+        padding: 10px;
+        border: 1px solid #000;
+      }
+      .green {
+        background-color: green;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+    </style>
+    <script src="./javascript/chart.js" defer></script>
+  </head>
+  <body>
+    <div class="form-flex">
+      <div>
+        <a href="/">Back</a>
+        <h3>Aplikasi Interval Bar Chart</h3>
+        <div>
+          <input type="text" id="input-chart" name="input-chart" />
+          <button type="submit" id="generate-btn">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div class="chart-wrapper">
+      <div class="chart-items"></div>
+    </div>
+  </body>
+</html>
