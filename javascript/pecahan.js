@@ -28,10 +28,10 @@ function pecahanBilangan(e) {
     const spanListEl = document.createElement("span");
     spanListEl.id = `list-${idx + 1}`;
     spanListEl.classList.add("list");
+    const valuePengali = `1${"0".repeat(valuePerSatuan.length - 1 - idx)}`;
+    const contentValue = each * +valuePengali;
 
-    spanListEl.textContent = `${each}${"0".repeat(
-      valuePerSatuan.length - 1 - idx
-    )}`;
+    spanListEl.textContent = contentValue;
 
     listTag.appendChild(spanListEl);
   });

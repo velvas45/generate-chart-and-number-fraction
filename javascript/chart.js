@@ -71,5 +71,3 @@ function checkColor(val) {
 
   return "blue";
 }
-
-// setInterval(generateChart, 10000);
